@@ -1,7 +1,7 @@
 "use strict";
 const React = require("react");
 const react_native_1 = require("react-native");
-const WebViewBridge = require("react-native-webview-bridge-updated");
+const WebViewBridge = require("react-native-webview-bridge");
 const webview_crypto_1 = require("webview-crypto");
 const injectString = webview_crypto_1.webViewWorkerString + `
 (function () {

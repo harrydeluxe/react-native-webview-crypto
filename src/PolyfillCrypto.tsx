@@ -1,6 +1,6 @@
 import * as React from "react";
 import {StyleSheet, View} from "react-native";
-const WebViewBridge = require("react-native-webview-bridge-updated");
+const WebViewBridge = require("react-native-webview-bridge");
 
 import {MainWorker, webViewWorkerString} from "webview-crypto";
 

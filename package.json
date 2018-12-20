@@ -22,12 +22,12 @@
   "author": "Saul Shanabrook",
   "license": "MIT",
   "dependencies": {
-    "webview-crypto": "0.1.10"
+    "webview-crypto": "0.1.5"
   },
   "peerDependencies": {
     "react": "*",
     "react-native": "*",
-    "react-native-webview-bridge-updated": "*"
+    "react-native-webview-bridge": "*"
   },
   "devDependencies": {
     "typescript": "1.8.10",
