@@ -27,7 +27,7 @@
   "peerDependencies": {
     "react": "*",
     "react-native": "*",
-    "react-native-webview-bridge": "*"
+    "react-native-webview-bridge-updated": "*"
   },
   "devDependencies": {
     "typescript": "1.8.10",
