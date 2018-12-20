@@ -11,7 +11,7 @@
     "typings:install": "typings install",
     "build": "tsc"
   },
-  "main": "./dist/src/PolyfillCrypto.js",
+  "main": "./dist/PolyfillCrypto.js",
   "typings": "./src/PolyfillCrypto.ts",
   "files": [
     "dist",
