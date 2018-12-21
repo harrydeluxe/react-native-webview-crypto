@@ -26,6 +26,7 @@ export default class PolyfillCrypto extends React.Component<{debug: boolean}, {}
     return (
       <View style={styles.hidden} >
         <WebViewBridge
+            useWebKit={true}
           ref={
             (c) => {
               if (c && !worker)  {

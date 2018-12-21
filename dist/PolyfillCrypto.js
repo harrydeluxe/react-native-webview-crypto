@@ -15,7 +15,7 @@ class PolyfillCrypto extends React.Component {
     }
     render() {
         let worker;
-        return (React.createElement(react_native_1.View, {style: styles.hidden}, React.createElement(WebViewBridge, {ref: (c) => {
+        return (React.createElement(react_native_1.View, {style: styles.hidden}, React.createElement(WebViewBridge, {useWebKit: true, ref: (c) => {
             if (c && !worker) {
                 worker = new webview_crypto_1.MainWorker(c.sendToBridge, this.props.debug);
                 if (window.crypto) {
@@ -33,7 +33,7 @@ class PolyfillCrypto extends React.Component {
             worker.onWebViewMessage(message);
         }, injectedJavaScript: injectString, onError: (error) => {
             console.warn("react-native-webview-crypto: Error creating webview: ", error);
-        }, javaScriptEnabled: true, source: { uri: "about:blank" }})));
+        }, javaScriptEnabled: true, source: { uri: "0.0.0.0:443" }})));
     }
 }
 PolyfillCrypto.defaultProps = {
