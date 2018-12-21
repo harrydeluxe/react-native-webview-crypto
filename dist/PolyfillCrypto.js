@@ -33,7 +33,7 @@ class PolyfillCrypto extends React.Component {
             worker.onWebViewMessage(message);
         }, injectedJavaScript: injectString, onError: (error) => {
             console.warn("react-native-webview-crypto: Error creating webview: ", error);
-        }, javaScriptEnabled: true, source: { uri: "0.0.0.0:443" }})));
+        }, javaScriptEnabled: true, source: { uri: "about:blank" }})));
     }
 }
 PolyfillCrypto.defaultProps = {
